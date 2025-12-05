@@ -1,0 +1,44 @@
+Compiled from "Calculator.java"
+public class jvm.demo.calculator.Calculator {
+  public jvm.demo.calculator.Calculator();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public int add(int, int);
+    Code:
+       0: iload_1
+       1: iload_2
+       2: iadd
+       3: ireturn
+
+  public int subtract(int, int);
+    Code:
+       0: iload_1
+       1: iload_2
+       2: isub
+       3: ireturn
+
+  public int multiply(int, int);
+    Code:
+       0: iload_1
+       1: iload_2
+       2: imul
+       3: ireturn
+
+  public int divide(int, int);
+    Code:
+       0: iload_1
+       1: iload_2
+       2: idiv
+       3: ireturn
+
+  public double circleLength(int);
+    Code:
+       0: ldc2_w        #9                  // double 6.283185307179586d
+       3: iload_1
+       4: i2d
+       5: dmul
+       6: dreturn
+}

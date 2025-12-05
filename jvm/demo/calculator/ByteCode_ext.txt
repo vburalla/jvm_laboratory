@@ -1,0 +1,110 @@
+Classfile /Users/vburalla/projects/jvm_laboratory/jvm/demo/calculator/Calculator.class
+  Last modified Nov 29, 2025; size 553 bytes
+  SHA-256 checksum 2a7e621135e160f89a0f2d670677d908587313db934b29802a80a4680bfafb90
+  Compiled from "Calculator.java"
+public class jvm.demo.calculator.Calculator
+  minor version: 0
+  major version: 65
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #7                          // jvm/demo/calculator/Calculator
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 6, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // jvm/demo/calculator/Calculator
+   #8 = Utf8               jvm/demo/calculator/Calculator
+   #9 = Double             6.283185307179586d
+  #11 = Utf8               PI
+  #12 = Utf8               D
+  #13 = Utf8               ConstantValue
+  #14 = Double             3.141592653589793d
+  #16 = Utf8               Code
+  #17 = Utf8               LineNumberTable
+  #18 = Utf8               add
+  #19 = Utf8               (II)I
+  #20 = Utf8               subtract
+  #21 = Utf8               multiply
+  #22 = Utf8               divide
+  #23 = Utf8               circleLength
+  #24 = Utf8               (I)D
+  #25 = Utf8               SourceFile
+  #26 = Utf8               Calculator.java
+{
+  public jvm.demo.calculator.Calculator();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+
+  public int add(int, int);
+    descriptor: (II)I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=3, args_size=3
+         0: iload_1
+         1: iload_2
+         2: iadd
+         3: ireturn
+      LineNumberTable:
+        line 8: 0
+
+  public int subtract(int, int);
+    descriptor: (II)I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=3, args_size=3
+         0: iload_1
+         1: iload_2
+         2: isub
+         3: ireturn
+      LineNumberTable:
+        line 12: 0
+
+  public int multiply(int, int);
+    descriptor: (II)I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=3, args_size=3
+         0: iload_1
+         1: iload_2
+         2: imul
+         3: ireturn
+      LineNumberTable:
+        line 16: 0
+
+  public int divide(int, int);
+    descriptor: (II)I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=3, args_size=3
+         0: iload_1
+         1: iload_2
+         2: idiv
+         3: ireturn
+      LineNumberTable:
+        line 20: 0
+
+  public double circleLength(int);
+    descriptor: (I)D
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=2, args_size=2
+         0: ldc2_w        #9                  // double 6.283185307179586d
+         3: iload_1
+         4: i2d
+         5: dmul
+         6: dreturn
+      LineNumberTable:
+        line 24: 0
+}
+SourceFile: "Calculator.java"
