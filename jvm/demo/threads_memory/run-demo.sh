@@ -52,7 +52,7 @@ echo ""
 
 # Ejecutar con NMT habilitado
 java -XX:NativeMemoryTracking=detail \
-    -Xss
+    -Xss 1m
      -Xms50m \
      -Xmx512m \
      ThreadMemoryDemo
